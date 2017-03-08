@@ -3,7 +3,8 @@ import TodoList from './todo_list';
 import { createTodo, removeTodo, updateTodo, fetchTodos } from '../../actions/todo_actions';
 
 const mapStateToProps = state => ({
-  todos: state.todos
+  todos: state.todos,
+  errors: state.errors
 });
 
 const mapDispatchToProps = dispatch => ({
